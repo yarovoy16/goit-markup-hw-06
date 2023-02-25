@@ -577,7 +577,7 @@ img{
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .backdrop.is-hidden .modal {
   transform:translate(-50%, -50%) scale(1.1);
@@ -597,8 +597,6 @@ img{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin: 0 auto;
-  text-align: center;
-
 }
 .btn-close{
   position: absolute;
@@ -607,8 +605,6 @@ img{
   right: 24px;
   width: 24px;
   height: 24px;
-  padding: 8px 8px;
-
   justify-content: center;
   align-items: center;
 
@@ -618,8 +614,51 @@ img{
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .text-modal{
-  margin: 50% auto;
+  margin-top: 72px;
+  margin-bottom: 17px;
 }
+
+.form{
+  margin-top: 50px;
+}
+.form-modal{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+} 
+.form-label{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--SLATE);
+  top: -20px;
+
+
+}
+.form-input{
+  padding-left: 20px;
+}
+
+.icon-bg-modal{
+  position: absolute;
+  background-color: #31D0AA;
+  display: flex;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+.form-input:focus .icon-bg-modal{
+  background-color: #404BBF;
+}
+
+
+
+
 
 
