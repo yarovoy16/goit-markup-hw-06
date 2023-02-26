@@ -628,6 +628,7 @@ img{
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
+  
 } 
 .form-label{
   position: absolute;
@@ -647,14 +648,28 @@ img{
 
 .icon-bg-modal{
   position: absolute;
-  background-color: #31D0AA;
   display: flex;
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
+  background-color: #31D0AA;
 }
 .form-input:focus .icon-bg-modal{
   background-color: #404BBF;
+}
+.form-input::placeholder{
+  font-size: 12px;
+}
+.icon-modal{
+  fill: var(--NAVY-BLUE);
+}
+.form-input:focus ~ .icon-modal{
+  fill: var(--Iris);
+  /* background-color: #8E8F99; */
+
+}
+.comment{
+  resize: none;
 }
 
 
