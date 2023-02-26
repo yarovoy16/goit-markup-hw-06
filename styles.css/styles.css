@@ -671,6 +671,9 @@ img{
 .comment{
   resize: none;
 }
+.form-input:focus{
+  border-color: #2196F3
+}
 
 
 
