@@ -294,7 +294,7 @@
             solutions.</p>
         </div>
         <div class="footer-box2">
-          <p class="media-footer">social media</p>
+          <p class="media-footer">Social media</p>
           <ul class="links-footer">
             <li><a class="link-icon bg-footer-icon" href="">
                 <svg class="socials-icon" width="24" height="24">
@@ -326,6 +326,15 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-footer">
+          <p class="media-footer">Subscribe</p>
+          <input type="email" class="input-email" name="email-footer" placeholder="Email">
+          <button type="submit" class="btn-subscribe">Subscribe 
+            <svg class="frame-footer" width="24" height="24">
+              <use href="./images/icons.svg#frame"></use>
+            </svg>
+          </button>
+        </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
@@ -340,38 +349,36 @@
       </div>
       <div class="form">
         <div class="form-modal">
-          <input class="form-input" type="text" name="name" placeholder="Ivan Ivanov">
-          <span class="icon-bg-modal" width="18" height="18">
-            <svg class="icon-modal" width="12" height="12">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
-          </span>
-          <label class="form-label">Name </label>
+          <label for="name" class="form-label">Name </label>
+          <input class="form-input" id="name" type="text" name="name" placeholder=" ">
+          <svg class="icon-modal" width="18" height="18">
+            <use href="./images/icons.svg#person"></use>
+          </svg>
         </div>
         <div class="form-modal">
-          <input class="form-input" type="tel" name="tel" placeholder="+3" autocomplete="off">
-          <span class="icon-bg-modal" width="18" height="18">
-            <svg class="icon-modal" width="12" height="12">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
-          </span>
-          <label class="form-label">Phone </label>
+          <label class="form-label" for="tel">Phone </label>
+          <input class="form-input" id="tel" type="tel" name="tel" placeholder=" " autocomplete="off">
+          <svg class="icon-modal" width="18" height="24">
+            <use href="./images/icons.svg#phone"></use>
+          </svg>
         </div>
         <div class="form-modal">
-          <input class="form-input" type="email" name="email" placeholder="@">
-          <span class="icon-bg-modal" width="18" height="18">
-            <svg class="icon-modal" width="12" height="12">
-              <use href="./images/icons.svg#person"></use>
-            </svg>
-          </span>
-          <label class="form-label">Email </label>
+          <label class="form-label" for="email">Email </label>
+          <input class="form-input" id="email" type="email" name="email" placeholder=" ">
+          <svg class="icon-modal" width="18" height="24">
+            <use href="./images/icons.svg#email"></use>
+          </svg>
         </div>
         <div class="form-modal">
-          <textarea class="comment" name="comment" cols="10" rows="10" placeholder="Text input"></textarea>
-          <label class="form-label">Текст</label>
-
+          <label class="form-label" for="comment">Текст</label>
+          <textarea class="form-comment" id="comment"name="comment" cols="10" rows="6" placeholder="Text input"></textarea>
         </div>
       </div>
+      <div class="policy">
+        <input type="checkbox" class="checkbox" name="checkbox">
+        <p class="text-policy">I accept the terms and conditions of the <a href="" class="text-policy-link">Privacy Policy</a></p>
+      </div>
+      <button type="submit" class="submit-btn">Send</button>
     </div>
   </div>
   <script src="./js/modal.js">
