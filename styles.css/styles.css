@@ -644,7 +644,7 @@ img{
 
   width: 408px;
   /* height: 576px; */
-  padding: 24px 24px;
+  padding: 72px 24px 24px 24px;
   background: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -672,14 +672,11 @@ img{
 }
 
 .text-modal{
-  margin-top:48px;
-  margin-bottom: 1px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
-.form{
-  padding-top: 30px;
-}
+
 .form-modal{
   position: relative;
   display: flex;
@@ -688,11 +685,11 @@ img{
 } 
 
 .form-modal:not(:last-child){
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
   
 .form-label{
-  position: absolute;
+
   display: block;
 
   font-weight: 400;
@@ -701,9 +698,6 @@ img{
   letter-spacing: 0.01em;
 
   color: var(--LIGHTSLATE);
-  top: -20px;
-
-
 }
 .form-input{
   padding-left: 40px;
@@ -729,7 +723,7 @@ img{
   position: absolute;
   top: 50%;
   left: 16px;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
   fill: var(--NAVY-BLUE);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -775,10 +769,38 @@ img{
   align-items: center;
 }
 .checkbox{
-  margin-right: 10px;
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   width: 16px;
   height: 16px;
 }
+.check-span{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-right: 8px;
+
+}
+.checkbox:checked ~ .check-span{
+  background-color: var(--Ocean);
+  border: none;
+  background-image: url(../images/SVG/checkbox-2.svg);
+  background-size: contain;
+
+  background-repeat:no-repeat;
+  background-origin: border-box;
+  border-color:var(--Ocean)
+}
+.label-policy{
+  display: flex;
+  align-items: center;
+}
+
 .submit-btn{
   display: block;
   margin: 0 auto;
