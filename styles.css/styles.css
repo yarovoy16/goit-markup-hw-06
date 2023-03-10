@@ -36,7 +36,6 @@ img{
 }
 .container{
   width: 1158px;
-  /* outline: 2px solid #a7a658; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -44,7 +43,6 @@ img{
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline:1px solid #c1ad3e; */
 }
 .flex-container{
   display: flex;
@@ -672,7 +670,7 @@ img{
 }
 
 .text-modal{
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
